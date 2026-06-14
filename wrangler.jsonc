@@ -1,0 +1,15 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+
+    // Cloudflare 上の Worker 名
+    "name": "dify-extensions-worker",
+
+    // Worker のエントリーポイント
+    "main": "src/index.ts",
+
+    // 今日の日付か、プロジェクトで固定したい日付
+    "compatibility_date": "2026-06-14",
+
+    // workers.dev の URL を有効にする
+    "workers_dev": true,
+}

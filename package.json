@@ -1,7 +1,10 @@
 {
   "scripts": {
     "dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler deploy --minify src/index.ts"
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "vitest run --config vitest.config.e2e.ts"
   },
   "dependencies": {
     "@anatine/zod-openapi": "^2.2.2",
@@ -11,6 +14,7 @@
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20231218.0",
+    "vitest": "^4.1.8",
     "wrangler": "^3.22.0"
   }
 }
